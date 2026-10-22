@@ -1,0 +1,217 @@
+body{
+    margin:0;
+    padding:0;
+
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    padding: 15px 8%;
+    background-color: black;
+    
+
+}
+.nav-link{
+    display: flex;
+    list-style: none;
+    font-size: 18px;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    
+}
+.nav-link img{
+    width: 140px;
+    display:flex;
+    margin: 0;
+    padding: 0;
+}
+
+.button-cointainer{
+    text-align: center;
+    height:20px;
+    
+}
+
+.mybutton{
+    border: 5px black solid;
+    border-radius: 10px;
+    padding: 9px 3%; 
+    font-size: 16px;
+    background-color: #007bff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.mybutton:hover{
+    color: red;
+    transform: scale(1.05);
+}
+
+.homepage h1, h3{
+    text-align: center;
+}
+
+
+.countdown{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), 
+    rgba(0, 0, 0, 0.5)), url(background.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.countdown h1{
+    font-size: 4rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.timebox{
+    display: flex;
+    gap: 90px;
+}
+
+.time{
+    text-align: center;
+}
+
+.time h2{
+    font-size: 5rem;
+    font-weight: 100;
+}
+.socials h1{
+    text-align: center;
+}
+
+.socials-links{
+    display: flex;
+    justify-content: center;
+    gap:80px;
+    padding:10px 0px 0px 30px;
+    margin:0px;
+    padding: 10px;
+    font-size: 60px;
+    
+    
+    
+
+}
+
+.socials-links a{
+    display: flex;
+    color:black;
+    justify-content: center;
+    border: 5px solid black;
+    border-radius: 20px;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+
+.bxl-tiktok a:hover {
+    color: black;
+    
+    
+}
+
+.bxl-facebook-circle {
+    color: blue;
+}
+
+.bxl-instagram {
+    color: purple;
+}
+
+.bxl-youtube {
+    color: red;
+}
+/* Tablets and smaller */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 12px 5%;
+    }
+
+    .nav-link img {
+        width: 110px;
+    }
+
+    .countdown h1 {
+        font-size: 2.5rem;
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    .timebox {
+        gap: 40px;
+    }
+
+    .time h2 {
+        font-size: 3.5rem;
+    }
+
+    .socials-links {
+        gap: 30px;
+        font-size: 45px;
+        flex-wrap: wrap;
+    }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px 4%;
+    }
+
+    .nav-link img {
+        width: 90px;
+    }
+
+    .mybutton {
+        padding: 10px 25px;
+        font-size: 15px;
+    }
+
+    .countdown h1 {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+
+    .timebox {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .time h2 {
+        font-size: 2.2rem;
+        margin: 5px 0;
+    }
+
+    .time p {
+        font-size: 0.9rem;
+        margin: 0;
+    }
+
+    .socials h1 {
+        font-size: 1.6rem;
+    }
+
+    .socials-links {
+        gap: 15px;
+        font-size: 35px;
+    }
+
+    .socials-links a {
+        border-width: 3px;
+        border-radius: 14px;
+    }
+}
